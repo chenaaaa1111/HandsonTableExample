@@ -1,0 +1,176 @@
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 98vw;
+    max-width: 98vw;
+    /* max-height: 100vh; */
+    /* padding-left: 10px; */
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* 顶部 */
+.topheader {
+    order: 0;
+    flex: 0 0 50px;
+    background: linear-gradient(90deg, #2196f3, #ffffff);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 顶部左边 */
+.topheader>.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* 顶部右边 */
+.topheader>.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pagecontent {
+    flex: 1;
+    display: flex;
+
+}
+
+.pagecontent>nav {
+    display: flex;
+    flex-direction: column;
+    /* max-height: 100vh;
+    min-height: 100vh; */
+    /* overflow: auto; */
+    flex: 0 0 200px;
+    /* .pagecontentmini */
+
+}
+
+main {
+    flex: 1;
+    /* background-color: #f4f4f4; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    min-height: 90vh;
+}
+
+main>header {
+    flex: 1 0 50px;
+    flex-wrap: wrap;
+}
+
+/* headtop是header下的部分 */
+/* .headtop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12)
+} */
+
+/* headtop是header下的部分,单独1列 */
+.headtoprow1 {
+    flex: 1 1 100%;
+}
+
+/* headtop是header下的部分,2列,分站左右 */
+.headtoprow2 {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* headtop是header下的部分,2列,分站左右,左边部分 */
+.headtoprow2>.left {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+}
+
+/* headtop是header下的部分,2列,分站左右,右边部分 */
+.headtoprow2>.right {
+    /* flex: 1; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headtoprow3 {
+    flex: 1 1 33.33%;
+}
+
+.headtoprow4 {
+    margin-top: 1em;
+    flex: 0 1 15%;
+}
+
+main>article {
+    flex: 2 1 auto;
+}
+
+main>article {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+/* 网格布局 */
+.gridlayout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gridlayout>.griditem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+
+
+}
+
+article>section {
+    flex: 1 1 auto;
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    padding: 10px;
+}
+
+article>aside {
+    flex: 0 0 200px;
+    /* border: solid 1px;
+    border-radius: 5px; */
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 1px 3px 0 rgba(0, 0, 0, .12);
+    margin-left: 5px;
+    /* overflow-y: auto; */
+}
+
+main>footer {
+    margin-top: 20px;
+    /* border: solid 1px; */
+    flex: 1 0 50px;
+    height: 1px;
+    border: none;
+    background-color: rgba(0, 0, 0, .12);
+}

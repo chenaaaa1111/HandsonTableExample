@@ -1,0 +1,28 @@
+{
+  "name": "myproject",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@handsontable/vue": "^3.1.0",
+    "axios": "^0.18.0",
+    "dhtmlx-gantt": "^5.2.0",
+    "handsontable": "^6.2.2",
+    "muse-ui": "^3.0.0-rc.7",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vue-simple-uploader": "^0.5.6",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.10",
+    "@vue/cli-service": "^3.0.0-rc.10",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "vuedraggable": "^2.16.0"
+  }
+}

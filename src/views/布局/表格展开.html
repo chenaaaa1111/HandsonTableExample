@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="/jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('tr.parent').click(function () { // 获取所谓的父行
+                $(this).toggleClass("selected")
+                    .siblings('.child_' + this.id).toggle();;
+            });
+        });
+    </script>
+    <style type="text/css">
+        .selected {
+            background: rgb(231, 240, 249);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr class="parent" id="01">
+            <td> 11</td>
+            <td> 11</td>
+            <td> 11</td>
+        </tr>
+        <tr class="child_01">
+            <td> 22</td>
+            <td> 22</td>
+            <td> 22</td>
+        </tr>
+    </table>
+</body>
+
+</html>

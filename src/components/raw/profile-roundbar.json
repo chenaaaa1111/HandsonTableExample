@@ -1,0 +1,82 @@
+ [{
+         "special": "5",
+         "section": 0.1963,
+         "dendity": 0.154,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 5.6,
+         "section": 0.2463,
+         "dendity": 0.193,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 6,
+         "section": 0.2827,
+         "dendity": 0.222,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 6.3,
+         "section": 0.3117,
+         "dendity": 0.245,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 7,
+         "section": 0.3848,
+         "dendity": 0.302,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 8,
+         "section": 0.5027,
+         "dendity": 0.395,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 9,
+         "section": 0.6359,
+         "dendity": 0.499,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 10,
+         "section": 0.7854,
+         "dendity": 0.617,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 11,
+         "section": 0.9503,
+         "dendity": 0.746,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     },
+     {
+         "special": 12,
+         "section": 1.131,
+         "dendity": 0.888,
+         "standard": "",
+         "desc": "",
+         "type": "圆钢"
+     }
+
+ ]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>上中下布局</title>
+    <style>
+        .HolyGrail {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            flex: 1;
+        }
+
+        .HolyGrail-body {
+            display: flex;
+            flex: 1;
+        }
+
+        .HolyGrail-content {
+            flex: 1;
+        }
+
+        .HolyGrail-nav,
+        .HolyGrail-ads {
+            /* 两个边栏的宽度设为12em */
+            flex: 0 0 12em;
+        }
+
+        .HolyGrail-nav {
+            /* 导航放到最左边 */
+            order: -1;
+        }
+
+        @media (max-width: 768px) {
+            .HolyGrail-body {
+                flex-direction: column;
+                flex: 1;
+            }
+            .HolyGrail-nav,
+            .HolyGrail-ads,
+            .HolyGrail-content {
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+
+<body class="HolyGrail">
+    <div class="header">
+        <b>丹歌惊鸿(王也)</b>
+        </header>
+        <div class="HolyGrail-body">
+            <main class="HolyGrail-content">
+
+                <br>搁这儿遛弯儿的人别扰着 您都请便
+                <br>半不邋遢 小道名也
+                <br>胸无大志 爱咧咧
+                <br>少来打听那有的没的
+                <br>翻你个底儿掉掀朝天
+                <br>顺天下势 理天下事
+                <br>云山雾绕 方为术士
+                <br>人间不如意 随了谁的性
+            </main>
+            <nav class="HolyGrail-nav">nav</nav>
+            <aside class="HolyGrail-ads">aside</aside>
+        </div>
+        <div class="footer">引势而流 鸿门乱局 各有各选择</footer>
+</body>
+
+</html>

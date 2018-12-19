@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>上下 中间先左中右分，再上下分</title>
+    <style>
+        html * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .header {
+            flex: 1 0 50px;
+            background-color: #fdf6e3;
+        }
+
+        .main {
+            background-color: #ffffff;
+            flex: 1 0 auto;
+            display: flex;
+            /*轴向默认为横, 其实这里可以不写*/
+            flex-direction: row;
+        }
+
+        .left {
+            background-color: #509839;
+            flex: 0 0 200px;
+            order: 0;
+            /* transition: 0.2s;
+            transform: translateX(-100%); */
+        }
+
+        .center {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            order: 1;
+        }
+
+        .right {
+            background-color: #823384;
+            flex: 0 0 200px;
+            order: 2;
+        }
+
+        .centerhead {
+            flex: 1 0 50px;
+            /* order:0; */
+        }
+
+        .centermid {
+            flex: 1 0 auto;
+            /* order:1; */
+            min-height: 100vh;
+        }
+
+        .centerfooter {
+            flex: 1 0 50px;
+            background-color: #323232;
+            color: #ffffff;
+            /* order:2; */
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+            .main {
+                flex-direction: column;
+
+            }
+            .left {
+                /* flex: 1 0 auto; */
+                transition: 0.5s;
+
+
+                transform: translateX(-100%);
+                display: none;
+            }
+            .center {
+                flex: 2 0 auto;
+                order: 0;
+            }
+            .right {
+                /* flex: 1 0 auto;
+                order: 1; */
+                transition: 0.2s;
+                /* 一般情况下应是translateX(100%) */
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <div class="header">
+            <b>丹歌惊鸿(王也)</b>
+        </div>
+        <div class="main">
+            <article class="left">左侧
+                <br>丹歌起势 同风而起
+                <br> 卧龙低伏 入我阵来
+                <br> 我即方位 我即吉凶
+                <br> 四方万物 皆我主宰</article>
+            <div class="center">
+                <article class="centerhead">commandbar
+                    <br>搁这儿遛弯儿的人别扰着 您都请便
+                </article>
+                <article class="centermid">centermid
+                    <br>但求无愧 自在随心,但求无愧 自在随心,但求无愧 自在随心,但求无愧 自在随心,但求无愧 自在随心,但求无愧 自在随心
+                    <br>但求无愧 自在随心
+                    <br>常应常静 常静清灵
+                    <br>凡人本就 六欲七情
+                    <br>祖师在上 弟子凡心
+                    <br>不入龙虎局 不得常清静
+                </article>
+                <article class="centerfoot">@Backfire copyright 2018
+                </article>
+            </div>
+            <article class="right">右侧
+                <br>但求无愧 自在随心
+                <br>常应常静 常静清灵
+                <br>凡人本就 六欲七情
+                <br>祖师在上 弟子凡心
+                <br>不入龙虎局 不得常清静</article>
+        </div>
+
+    </div>
+</body>
+
+</html>

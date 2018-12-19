@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>上下 中间先左中右分，再上下分</title>
+    <style>
+        html * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        .sectionn {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .headers {
+            flex: 1 0 50px;
+            background-color: #fdf6e3;
+        }
+
+        .mainn {
+            background-color: #ffffff;
+            flex: 1 0 auto;
+            display: flex;
+            /*轴向默认为横, 其实这里可以不写*/
+            flex-direction: row;
+        }
+
+        .leftt {
+            background-color: #509839;
+            flex: 0 0 200px;
+            order: 0;
+            /* transition: 0.2s;
+            transform: translateX(-100%); */
+        }
+
+        .centers {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            order: 1;
+        }
+
+        .centershead {
+            flex: 1 0 50px;
+        }
+
+
+        .centersmid {
+            flex: 1 0 auto;
+            /* order:1; */
+            min-height: 100vh;
+        }
+
+        .centerfooter {
+            flex: 1 0 50px;
+            background-color: #323232;
+            color: #ffffff;
+            /* order:2; */
+        }
+
+
+        .rightt {
+            background-color: #823384;
+            flex: 0 0 200px;
+            order: 2;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                flex-direction: column;
+
+            }
+            .leftt {
+                /* flex: 1 0 auto; */
+                transition: 0.5s;
+
+
+                transform: translateX(-100%);
+                display: none;
+            }
+            .centers {
+                flex: 2 0 auto;
+                order: 0;
+            }
+            .rightt {
+                /* flex: 1 0 auto;
+                order: 1; */
+                transition: 0.2s;
+                /* 一般情况下应是translateX(100%) */
+                transform: translateX(-100%);
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sectionn">
+        <div class="headers">
+            <b>丹歌惊鸿(王也)</b>
+        </div>
+        <div class="mainn">
+            <div class="leftt">左侧
+                <br>丹歌起势 同风而起
+                <br> 卧龙低伏 入我阵来
+                <br> 我即方位 我即吉凶
+                <br> 四方万物 皆我主宰</div>
+            <div class="centers">
+                <div centershead>aaaaa</div>
+                <div class="centersmid">aaaaa</div>
+                <div class="centerfooter">aaaaa</div>
+
+            </div>
+            <div class="rightt">右侧
+                <br>但求无愧 自在随心
+                <br>常应常静 常静清灵
+                <br>凡人本就 六欲七情
+                <br>祖师在上 弟子凡心
+                <br>不入龙虎局 不得常清静</div>
+        </div>
+    </div>
+</body>
+
+</html>
